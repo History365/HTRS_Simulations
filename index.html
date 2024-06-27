@@ -4,230 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTRS Simulations</title>
-    <style>
-        /* Reset and basic styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        /* Navbar styles */
-        .navbar {
-            background-color: #003366;
-            color: white;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .navbar h1 {
-            font-size: 24px;
-            margin: 0;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 12px;
-            font-size: 16px;
-        }
-
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        /* Header styles */
-        .header {
-            position: relative;
-            text-align: center;
-            color: white;
-            margin-bottom: 20px;
-            height: 400px;
-            overflow: hidden;
-        }
-
-        .header img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-        }
-
-        .logo {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            z-index: 100;
-        }
-
-        /* Flex container for main content and sidebar */
-        .flex-container {
-            display: flex;
-            justify-content: space-between;
-            margin: 20px;
-        }
-
-        .main-section {
-            width: 65%;
-        }
-
-        .small-section {
-            width: 30%;
-            margin-left: 5%;
-        }
-
-        .section {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
-
-        .content h2 {
-            color: #003366;
-        }
-
-        .content p {
-            line-height: 1.6;
-        }
-
-        /* Button styles */
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
-            color: white;
-            background-color: #003366;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-
-        .button:hover {
-            background-color: #00509e;
-        }
-
-        /* Footer styles */
-        .footer {
-            background-color: #003366;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-
-        /* Additional styles for specific elements */
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul li {
-            line-height: 1.6;
-        }
-
-        /* Work in Progress message */
-        .work-in-progress {
-            background-color: #003366;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-
-        /* Gallery */
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin: 20px;
-        }
-
-        .gallery-item {
-            width: 23%;
-            margin-bottom: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .gallery-item-info {
-            padding: 10px;
-            text-align: center;
-        }
-
-        /* Ensure all images have a consistent color overlay */
-        .gallery-item img::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.4);
-        }
-    </style>
-    <link rel="icon" type="image/png" href="favicon.png"> <!-- Corrected favicon type -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
-    <div class="logo">
-        <img src="HTRS Simulations Logo.png" alt="HTRS Simulations Logo" width="653" height="732"> <!-- Replace 'HTRS Simulations Logo.png' with your logo image path -->
-    </div>
-
-    <div class="navbar">
-        <h1>HTRS Simulations</h1>
-        <div class="nav-right">
-            <a href="Home.html">Home</a>
-            <a href="Reskins.html">Reskins</a>
-            <a href="Team.html">Team</a>
-        </div>
-    </div>
-
-    <div class="header">
-        <img src="HTRS Background.png" alt="Header Image">
-    </div>
-
-    <div class="content">
-        <div class="flex-container">
-            <div class="section main-section">
-                <h2>Welcome to HTRS Simulations!</h2>
-                <p>*We've recently undergone rebranding, so you'll now see some reskins displayed as [HFEP] instead of [HTRS]. We apologize for any inconvenience caused.*</p>
-                <p>Founded in 2024, HTRS Simulations provides a wide range of reskins and modifications for train simulation games. Our community is dedicated to enhancing your simulation experience with high-quality content.</p>
-                <ul>
-                    <li><a href="https://example.com" target="_blank">Join Us On Discord</a></li>
-                </ul>
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo">
+                <img src="HTRS Simulations Logo.png" alt="HTRS Simulations Logo" width="150">
             </div>
-            <div class="section small-section">
-                <h2>Other Websites</h2>
-                <ul>
-                    <li><a href="https://example.com" target="_blank">Train Simulator Archive</a></li>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Reskins.html">Reskins</a></li>
+                    <li><a href="Team.html">Team</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
-    </div>
+    </header>
 
-    <div class="work-in-progress">
-        <h2>Work in Progress</h2>
-    </div>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to HTRS Simulations</h1>
+            <p>*We've recently undergone rebranding, so you'll now see some reskins displayed as [HFEP] instead of [HTRS]. We apologize for any inconvenience caused.*</p>
+            <a href="https://example.com" target="_blank" class="button">Join Us On Discord</a>
+        </div>
+    </section>
 
-    <div class="gallery">
+    <section class="main-content">
+        <div class="content-section">
+            <h2>Other Websites</h2>
+            <ul class="other-websites">
+                <li><a href="https://example.com" target="_blank">Train Simulator Archive</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="work-in-progress">
+        <div class="work-in-progress-inner">
+            <h2>Work in Progress</h2>
+        </div>
+    </section>
+
+    <section class="gallery">
         <div class="gallery-item">
             <img src="csx_ac4400_yn2_yn3.jpg" alt="CSX AC4400 YN2 and YN3 variants">
             <div class="gallery-item-info">
@@ -256,10 +75,11 @@
                 <p>Chicago and North Western C44-9W locomotives in diverse liveries. Learn about the history and operational roles of these iconic locomotives.</p>
             </div>
         </div>
-    </div>
+    </section>
 
     <footer class="footer">
         <p>HTRS Simulations &copy; 2024</p>
     </footer>
 </body>
 </html>
+
